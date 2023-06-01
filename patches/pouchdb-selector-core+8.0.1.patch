@@ -1,0 +1,14 @@
+diff --git a/node_modules/pouchdb-selector-core/lib/index.js b/node_modules/pouchdb-selector-core/lib/index.js
+index 26330fb..877b247 100644
+--- a/node_modules/pouchdb-selector-core/lib/index.js
++++ b/node_modules/pouchdb-selector-core/lib/index.js
+@@ -9,6 +9,9 @@ var pouchdbCollate = require('pouchdb-collate');
+ // can be "deep" due to dot notation
+ function getFieldFromDoc(doc, parsedField) {
+   var value = doc;
++
++  if(!value) return;
++
+   for (var i = 0, len = parsedField.length; i < len; i++) {
+     var key = parsedField[i];
+     value = value[key];
