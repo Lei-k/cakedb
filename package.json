@@ -1,7 +1,7 @@
 {
-  "name": "knife",
+  "name": "@leimon/cakedb",
   "version": "1.0.0",
-  "description": "knife",
+  "description": "cakedb",
   "main": "dist/index.js",
 	"type": "dist/index.d.ts",
   "scripts": {
